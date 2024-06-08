@@ -1,15 +1,161 @@
 .panda-container {
-  position: relative;
-  z-index: 1;
+  position: absolute;
   width: 8rem;
   bottom: 0;
   right: 60px;
-  transform: translateX(8rem);
+}
 
-  /* animation-name: panda1;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; */
+.panda-1 {
+  top: 15rem;
+  left: 6rem;
+  animation: panda1 1s ease-in-out infinite;
+}
+
+@keyframes panda1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(8rem);
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.panda-2 {
+  top: 15rem;
+  left: 18rem;
+  animation: panda2 2s ease-in-out infinite;
+}
+
+@keyframes panda2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(8rem);
+  }
+
+  50% {
+    transform: translateY(2rem);
+  }
+
+  70% {
+    transform: translateY(8rem);
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.panda-3 {
+  z-index: 3;
+  top: 26rem;
+  left: 4rem;
+  animation: panda3 2s ease-in-out infinite;
+  animation-name: panda3;
+}
+
+@keyframes panda3 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(8rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.panda-4 {
+  z-index: 3;
+  top: 34rem;
+  left: 9rem;
+  transform-origin: center;
+  transform: rotate(30deg);
+  animation: panda-especial 2s ease-in-out infinite;
+}
+
+@keyframes panda-especial {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  90% {
+    transform: translateY(2rem) translateX(6rem);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+    /* transition-delay: transform 5s; */
+  }
+}
+
+.panda-5 {
+  z-index: 3;
+  top: 35rem;
+  left: 24rem;
+  animation: panda4 2s ease-in-out infinite;
+}
+
+@keyframes panda4 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(6rem);
+  }
+
+  50% {
+    transform: translateY(2rem);
+  }
+
+  70% {
+    transform: translateY(8rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    transition-delay: transform 5s;
+  }
+}
+
+.panda-6 {
+  z-index: 8;
+  top: 43rem;
+  left: 18rem;
+  transform: translateY(4rem);
+  animation: panda6 5s ease-in-out infinite;
+}
+
+@keyframes panda6 {
+  0% {
+    transform: translateY(4rem);
+  }
+
+  10% {
+    transform: translateY(8rem);
+  }
+
+  100% {
+    transform: translateY(4rem);
+  }
+}
+
+.panda-7 {
+  z-index: 8;
+  top: 43rem;
+  left: 6rem;
+  animation: panda2 2s ease-in-out infinite;
 }
 
 .head {
@@ -45,27 +191,7 @@
   height: 0.5rem;
   background: black;
   border-radius: 50%;
-
-  animation-name: blink;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
 }
-
-/* @keyframes blink {
-    0% {
-      height: 5px;
-    }
-  
-    5% {
-      transform: translate(0px, 2.5px);
-      height: 2px;
-    }
-  
-    10% {
-      transform: translate(0px, 0px);
-      height: 5px;
-    }
-  } */
 
 .eye-left {
   left: 2.7rem;
@@ -73,6 +199,26 @@
 
 .eye-right {
   right: 2.7rem;
+}
+
+.eyes-animation {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    height: 0.5rem;
+  }
+
+  5% {
+    transform: translate(0rem, 0.25rem);
+    height: 0.2rem;
+  }
+
+  10% {
+    transform: translate(0rem, 0rem);
+    height: 0.5rem;
+  }
 }
 
 .nose {

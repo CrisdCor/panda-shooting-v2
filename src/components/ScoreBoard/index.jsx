@@ -1,18 +1,17 @@
-import { useState } from "react";
+import { useContext } from "react";
+
+import ScoreContext from "../../context/ScoreContext";
+
 import "./styles.css";
 
 export default function ScoreBoard() {
-  const [counter, setCounter] = useState(0);
-
-  const shoot = () => {
-    setCounter(() => counter + 1);
-  };
+  const { score } = useContext(ScoreContext);
 
   return (
     <div className="score">
-      <h1 onClick={() => shoot}>Shooting Panda</h1>
+      <h1>Shooting Panda</h1>
       <p>
-        Puntaje: <span>{counter}</span>
+        Puntaje: <span>{score}</span>
       </p>
     </div>
   );

@@ -1,0 +1,43 @@
+.sky-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sky {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.sky__day {
+  background: var(--day-sky);
+}
+
+.sky__night {
+  background: var(--night-sky);
+}
+
+.sky img {
+  width: 6.4rem;
+  margin-top: 6.8rem;
+  margin-left: 1.6rem;
+}
+
+.sky-animation {
+  /* animation: sky-change 20s linear infinite; */
+}
+
+@keyframes sky-change {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
