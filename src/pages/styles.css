@@ -1,0 +1,214 @@
+:root {
+  --day-sky: #5279f0;
+  --night-sky: #03144b;
+  --text-color: white;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.phone {
+  position: relative;
+  border: 8px solid black;
+  border-radius: 4rem;
+  height: 62rem;
+  width: 32rem;
+  background: var(--day-sky);
+  box-shadow: 4px 4px 40px;
+  overflow: hidden;
+}
+
+/* .layer-1 {
+  position: absolute;
+  z-index: 1;
+  height: 450px;
+  width: 80px;
+  bottom: 0;
+  right: 60px;
+
+  animation-name: panda1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+} */
+
+/* @keyframes panda1 {
+  0% {
+    bottom: 0;
+  }
+
+  25% {
+    bottom: -80px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+} */
+
+/* .layer-2 {
+  position: absolute;
+  z-index: 2;
+  height: 450px;
+  width: 80px;
+  bottom: 0;
+  left: 60px;
+
+  animation-name: panda2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+} */
+
+/* @keyframes panda2 {
+  0% {
+    bottom: 0;
+  }
+
+  25% {
+    bottom: -80px;
+  }
+
+  50% {
+    bottom: -20px;
+  }
+
+  70% {
+    bottom: -80px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+} */
+
+/* .mountain-1 {
+  position: absolute;
+  z-index: 3;
+  height: 400px;
+  width: 220px;
+  background: rgb(11, 112, 87);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+} */
+
+/* .layer-4 {
+  position: absolute;
+  z-index: 4;
+  height: 350px;
+  width: 80px;
+  bottom: 0;
+  left: 50px;
+
+  animation-name: panda3;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+} */
+
+/* @keyframes panda3 {
+  0% {
+    bottom: 0;
+  }
+
+  25% {
+    bottom: -80px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+} */
+
+.mountain-2 {
+  position: absolute;
+  z-index: 5;
+  height: 300px;
+  width: 180px;
+  background: rgb(81, 163, 143);
+  left: 0;
+  bottom: 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* .layer-6 {
+  position: absolute;
+  z-index: 6;
+  height: 250px;
+  width: 80px;
+
+  bottom: 0;
+  right: 50px;
+
+  animation-name: panda4;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+} */
+
+/* @keyframes panda4 {
+  0% {
+    bottom: 0;
+  }
+
+  25% {
+    bottom: -80px;
+  }
+
+  50% {
+    bottom: -20px;
+  }
+
+  70% {
+    bottom: -80px;
+  }
+
+  100% {
+    bottom: 0;
+    transition-delay: bottom 5s;
+  }
+} */
+
+.mountain-3 {
+  position: absolute;
+  z-index: 7;
+  height: 200px;
+  width: 180px;
+  background: rgb(0, 255, 191);
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.mountain-4 {
+  position: absolute;
+  z-index: 8;
+  height: 110px;
+  width: 180px;
+  background: green;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+/* Diseño del panda */
